@@ -23,7 +23,6 @@ export function AddMovie({ movieApi }){
 
     async function handleSubmit(e){
         e.preventDefault();
-        console.log(movieApi)
         movieApi.createMovie({ title, year, plot});
 
         setTitle("");
